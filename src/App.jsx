@@ -272,7 +272,7 @@ const Navbar = ({ onOpenModal, currentView, setView }) => {
         <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-mid-ivory/70">
           <li onClick={() => { setView('home'); window.scrollTo(0, 0); }} className={`${currentView === 'home' ? 'text-mid-ivory' : ''} hover:text-mid-champagne transition-colors cursor-pointer hover:-translate-y-[1px]`}>Approach</li>
           <li onClick={() => { setView('biases'); window.scrollTo(0, 0); }} className={`${currentView === 'biases' ? 'text-mid-ivory' : ''} hover:text-mid-champagne transition-colors cursor-pointer hover:-translate-y-[1px]`}>Biases</li>
-          <li onClick={() => { setView('blog'); window.scrollTo(0, 0); }} className={`${currentView === 'blog' ? 'text-mid-ivory' : ''} hover:text-mid-champagne transition-colors cursor-pointer hover:-translate-y-[1px]`}>Blog</li>
+          <li onClick={() => { setView('blog'); window.scrollTo(0, 0); }} className={`${currentView === 'blog' ? 'text-mid-ivory' : ''} hover:text-mid-champagne transition-colors cursor-pointer hover:-translate-y-[1px]`}>About Me</li>
         </ul>
 
         <div className="flex items-center gap-4">
@@ -1171,7 +1171,7 @@ const Footer = ({ setView, onOpenContactModal, onOpenTextModal }) => {
           <h4 className="font-bold text-mid-ivory text-sm uppercase tracking-wider mb-2">Architecture</h4>
           <span onClick={() => { setView('home'); window.scrollTo(0, 0); }} className="text-sm text-mid-ivory/60 hover:text-mid-champagne transition-colors w-fit cursor-pointer">Approach</span>
           <span onClick={() => { setView('biases'); window.scrollTo(0, 0); }} className="text-sm text-mid-ivory/60 hover:text-mid-champagne transition-colors w-fit cursor-pointer">Biases</span>
-          <span onClick={() => { setView('blog'); window.scrollTo(0, 0); }} className="text-sm text-mid-ivory/60 hover:text-mid-champagne transition-colors w-fit cursor-pointer">Blog</span>
+          <span onClick={() => { setView('blog'); window.scrollTo(0, 0); }} className="text-sm text-mid-ivory/60 hover:text-mid-champagne transition-colors w-fit cursor-pointer">About Me</span>
         </div>
 
         <div className="flex flex-col gap-4">
