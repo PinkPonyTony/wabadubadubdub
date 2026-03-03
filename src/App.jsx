@@ -977,19 +977,19 @@ const Protocol = () => {
       const cards = gsap.utils.toArray('.protocol-card');
 
       cards.forEach((card, i) => {
-        if (i < cards.length - 1) {
-          gsap.to(card, {
-            scale: 0.9,
-            opacity: 0.5,
-            filter: 'blur(10px)',
-            scrollTrigger: {
-              trigger: cards[i + 1],
-              start: "top bottom",
-              end: "top top", // Transitions natively over the height of the screen
-              scrub: true,
-            }
-          });
-        }
+        const triggerElement = i < cards.length - 1 ? cards[i + 1] : '.protocol-spacer';
+
+        gsap.to(card, {
+          scale: 0.9,
+          opacity: 0.5,
+          filter: 'blur(10px)',
+          scrollTrigger: {
+            trigger: triggerElement,
+            start: "top 60%", // Delayed so it doesn't blur immediately
+            end: "top top",
+            scrub: true,
+          }
+        });
       });
 
       // Animations for SVG graphics inside each card
@@ -1059,6 +1059,8 @@ const Protocol = () => {
           </div>
         </section>
       ))}
+      {/* Spacer to allow the final card (SYS.03) to stick and animate before FinalCTA */}
+      <div className="protocol-spacer h-[100dvh] w-full pointer-events-none"></div>
     </div>
   );
 };
