@@ -1175,8 +1175,7 @@ const Footer = ({ setView, onOpenContactModal, onOpenTextModal }) => {
 
         <div className="flex flex-col gap-4">
           <h4 className="font-bold text-mid-ivory text-sm uppercase tracking-wider mb-2">Connect</h4>
-          <a href="#" className="text-sm text-mid-ivory/60 hover:text-mid-champagne transition-colors w-fit">LinkedIn</a>
-          <a href="#" className="text-sm text-mid-ivory/60 hover:text-mid-champagne transition-colors w-fit">Twitter / X</a>
+          <a href="https://www.instagram.com/bastarikomerovic/" target="_blank" rel="noopener noreferrer" className="text-sm text-mid-ivory/60 hover:text-mid-champagne transition-colors w-fit">Instagram</a>
           <span onClick={onOpenContactModal} className="text-sm text-mid-ivory/60 hover:text-mid-champagne transition-colors w-fit cursor-pointer">Contact</span>
         </div>
       </div>
