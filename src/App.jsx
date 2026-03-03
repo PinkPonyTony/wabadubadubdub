@@ -1065,7 +1065,7 @@ const Protocol = () => {
 // Final CTA Section
 const FinalCTA = ({ onOpenModal }) => {
   return (
-    <section className="relative w-full bg-mid-obsidian px-6 py-24 md:py-32 lg:px-24">
+    <section className="relative w-full bg-mid-obsidian px-6 pt-12 pb-24 md:pt-16 md:pb-32 lg:px-24">
       <div className="mx-auto flex max-w-5xl flex-col items-center text-center rounded-3xl bg-mid-slate-light p-12 md:p-24 shadow-2xl border border-white/5 relative overflow-hidden group">
         {/* Decorative background glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-mid-champagne/5 blur-[120px] rounded-full pointer-events-none group-hover:bg-mid-champagne/10 transition-colors duration-1000"></div>
