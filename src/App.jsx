@@ -377,7 +377,7 @@ const Hero = ({ onOpenModal, setView }) => {
           <span className="hero-text-1 text-3xl md:text-5xl lg:text-5xl font-sans font-bold tracking-tight text-mid-ivory/90 leading-tight">
             I don't "make websites" or "shoot videos."
           </span>
-          <span className="hero-text-2 font-drama text-6xl md:text-8xl lg:text-[8rem] italic leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-mid-champagne via-[#E5D3A1] to-mid-champagne drop-shadow-2xl mt-[-10px]">
+          <span className="hero-text-2 font-drama text-6xl md:text-8xl lg:text-[8rem] italic leading-none tracking-tighter text-mid-champagne drop-shadow-2xl mt-[-10px]">
             I Design Perception <br /> That Drives Revenue.
           </span>
         </h1>
