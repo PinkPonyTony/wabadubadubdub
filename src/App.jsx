@@ -1002,7 +1002,7 @@ const Protocol = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="relative w-full bg-mid-obsidian pb-[20vh] border-b border-white/5 flex flex-col">
+    <div ref={containerRef} className="relative w-full bg-mid-obsidian border-b border-white/5 flex flex-col">
       {steps.map((step, index) => (
         <section
           key={index}
@@ -1058,9 +1058,6 @@ const Protocol = () => {
           </div>
         </section>
       ))}
-      {/* Spacer to allow scrolling past sticky cards. Since each pin is only 50%, we need 150% total space for 3 cards.
-          The first card provides 100vh just by existing, so we only need a bit more. */}
-      <div style={{ height: `${steps.length * 50}vh` }}></div>
     </div>
   );
 };
