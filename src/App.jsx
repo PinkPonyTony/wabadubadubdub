@@ -1060,7 +1060,7 @@ const Protocol = () => {
         </section>
       ))}
       {/* Spacer to allow the final card (SYS.03) to stick and animate before FinalCTA */}
-      <div className="protocol-spacer h-[100dvh] w-full pointer-events-none"></div>
+      <div className="protocol-spacer h-[50dvh] w-full pointer-events-none"></div>
     </div>
   );
 };
