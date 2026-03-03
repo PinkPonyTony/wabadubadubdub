@@ -264,7 +264,7 @@ const Navbar = ({ onOpenModal, currentView, setView }) => {
 
   return (
     <nav className="fixed left-0 right-0 top-6 z-50 px-4 pointer-events-none">
-      <div className={`mx-auto flex max-w-5xl items-center justify-between rounded-full px-6 py-4 pointer-events-auto transition-all duration-500 ${scrolled || currentView !== 'home' ? 'bg-glass shadow-2xl scale-100' : 'bg-transparent scale-105'}`}>
+      <div className={`mx-auto flex max-w-5xl items-center justify-between rounded-full px-6 py-4 pointer-events-auto transition-all duration-500 overflow-hidden transform-gpu ${scrolled || currentView !== 'home' ? 'bg-glass shadow-2xl scale-100' : 'bg-transparent scale-105'}`}>
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => { setView('home'); window.scrollTo(0, 0); }}>
           <span className="text-3xl font-signature tracking-tight text-mid-ivory drop-shadow-md">Tarik O.<span className="text-mid-champagne"></span></span>
         </div>
