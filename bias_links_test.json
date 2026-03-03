@@ -1,0 +1,170 @@
+[
+  {
+    "fullLink": "https://thedecisionlab.com/biases/ai-literacy-gap",
+    "textStr": "AI Literacy GapWhy do we feel so confident using generative AI while our AI literacy lags behind?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/accountability-diffusion-in-ai",
+    "textStr": "AmbiguityAccountability diffusion in AIWhy do AI systems make responsibility feel like no one’s job?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/action-bias",
+    "textStr": "SpeedAction BiasWhy do we prefer doing something to doing nothing?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/affect-heuristic",
+    "textStr": "AmbiguityAffect HeuristicWhy do we rely on our current emotions when making quick decisions?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/ambiguity-effect",
+    "textStr": "AmbiguityAmbiguity EffectWhy do we prefer options we know?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/anchoring-bias",
+    "textStr": "Info OverloadAnchoring BiasWhy do we compare everything to the first piece of information we received?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/attentional-bias",
+    "textStr": "SpeedAttentional BiasWhy do we focus more on some things than others?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/authority-bias",
+    "textStr": "SpeedAuthority BiasWhy do we always trust the doctor, even though they might be wrong?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/automation-bias",
+    "textStr": "SpeedAutomation BiasWhy do we accept the first plausible AI solution and stop searching?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/availability-heuristic",
+    "textStr": "MemoryAvailability HeuristicWhy do we tend to think that things that happened recently are more likely to happen again?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/bandwagon-effect",
+    "textStr": "AmbiguityBandwagon EffectWhy do we support opinions as they become more popular?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/barnum-effect",
+    "textStr": "AmbiguityBarnum EffectWhy do we believe our horoscopes?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/base-rate-fallacy",
+    "textStr": "Info OverloadBase Rate FallacyWhy do we rely on specific information over statistics?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/belief-perseverance",
+    "textStr": "MemoryBelief Perseverance (The Backfire Effect)Why do we maintain the same beliefs, even when we are proved wrong?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/benjamin-franklin-effect",
+    "textStr": "AmbiguityBenjamin Franklin effectWhy do we like someone more after doing them a favor?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/bikeshedding",
+    "textStr": "SpeedBikesheddingWhy do we focus on trivial things?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/bottom-dollar-effect",
+    "textStr": "AmbiguityBottom-Dollar EffectWhy do we transfer negative emotions about being broke on items that we purchase?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/bounded-rationality",
+    "textStr": "SpeedBounded RationalityWhy are we satisfied by “good enough?”Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/bundling-bias",
+    "textStr": "AmbiguityBundling BiasWhy do we value items purchased in a bundle less than those purchased individually?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/bye-now-effect",
+    "textStr": "MemoryBye-Now EffectWhy are we likely to spend more after reading the word “bye”?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/cashless-effect",
+    "textStr": "AmbiguityCashless EffectWhy does paying without physical cash increase the likelihood that we purchase something?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/category-size-bias",
+    "textStr": "AmbiguityCategory Size BiasWhy do we think we’re more likely to win at the big casino versus the small one?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/choice-overload-bias",
+    "textStr": "Info OverloadChoice OverloadWhy do we have a harder time choosing when we have more options?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/cognitive-dissonance",
+    "textStr": "SpeedCognitive DissonanceWhy is it so hard to change someone's beliefs?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/commitment-bias",
+    "textStr": "SpeedCommitment BiasWhy do people support their past ideas, even when presented with evidence that they're wrong?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/confirmation-bias",
+    "textStr": "MemoryConfirmation BiasWhy do we favor our existing beliefs?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/decision-fatigue",
+    "textStr": "Info OverloadDecision FatigueWhy do we make worse decisions at the end of the day?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/declinism",
+    "textStr": "AmbiguityDeclinismWhy do we think the past is better than the future?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/decoy-effect",
+    "textStr": "Info OverloadDecoy EffectWhy do we feel more strongly about one option after a third one is added?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/delegation-creep",
+    "textStr": "Delegation CreepWhy do we keep handing more decisions to AI?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/disposition-effect",
+    "textStr": "Info OverloadDisposition EffectWhy do we tend to hold on to losing investments?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/distinction-bias",
+    "textStr": "SpeedDistinction BiasWhy do we view options as more distinct when evaluating them simultaneously?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/dunning-kruger-effect",
+    "textStr": "AmbiguityDunning–Kruger EffectWhy do we fail to accurately gauge our own abilities?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/einstellung-effect",
+    "textStr": "AmbiguityEinstellung EffectWhy do our past experiences prevent us from reaching the best possible outcome?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/empathy-gap",
+    "textStr": "Info OverloadEmpathy GapWhy do we mispredict how much our emotions influence our behavior?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/endowment-effect",
+    "textStr": "SpeedEndowment EffectWhy do we value items more if they belong to us?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/extrinsic-incentive-bias",
+    "textStr": "MemoryExtrinsic Incentive BiasWhy do we think others are in it for the money, but we’re in it for the experience?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/false-consensus-effect",
+    "textStr": "AmbiguityFalse Consensus EffectWhy do we overestimate agreement?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/framing-effect",
+    "textStr": "Info OverloadFraming EffectWhy do our decisions depend on how options are presented to us?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/functional-fixedness",
+    "textStr": "MemoryFunctional FixednessWhy do we have trouble thinking outside the box?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/fundamental-attribution-error",
+    "textStr": "SpeedFundamental Attribution ErrorWhy do we underestimate the influence of the situation on people’s behavior?Learn More"
+  },
+  {
+    "fullLink": "https://thedecisionlab.com/biases/gamblers-fallacy",
+    "textStr": "AmbiguityGambler's FallacyWhy do we think a random event is more or less likely to occur if it happened several times in the past?Learn More"
+  }
+]

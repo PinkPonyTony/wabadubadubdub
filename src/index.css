@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-drama: "Playfair Display", serif;
+  --font-data: "JetBrains Mono", monospace;
+  --font-signature: "Caveat", cursive;
+
+  --color-mid-obsidian: #0D0D12;
+  --color-mid-champagne: #C9A84C;
+  --color-mid-champagne-dark: #A98835;
+  --color-mid-ivory: #FAF8F5;
+  --color-mid-slate: #2A2A35;
+  --color-mid-slate-light: #3A3A4A;
+}
+
+@layer base {
+
+  html,
+  body {
+    @apply bg-mid-obsidian text-mid-ivory font-sans antialiased overflow-x-hidden m-0 p-0 selection:bg-mid-champagne/30 selection:text-mid-champagne;
+  }
+}
+
+/* Global Noise Overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.05;
+  filter: url(#noiseFilter);
+}
+
+/* Utilities */
+@layer utilities {
+  .clip-hidden {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Soft, heavy rounded containers */
+  .rounded-panel {
+    @apply rounded-[2rem] md:rounded-[3rem];
+  }
+
+  .bg-glass {
+    @apply bg-mid-obsidian/60 backdrop-blur-xl border border-white/5;
+  }
+
+  .bg-glass-light {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+}
+
+/* Animation utilities and reset for GSAP */
+.nav-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
