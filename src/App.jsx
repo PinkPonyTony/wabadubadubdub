@@ -353,7 +353,7 @@ const Hero = ({ onOpenModal, setView }) => {
   const bgImage = "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2940&auto=format&fit=crop";
 
   return (
-    <section ref={containerRef} className="relative flex h-[100dvh] w-full items-center p-6 md:p-12 lg:p-24 overflow-hidden pt-24">
+    <section ref={containerRef} className="relative flex h-[100dvh] w-full items-center p-6 pt-32 md:pt-24 md:p-12 lg:p-24 overflow-hidden">
       {/* Background with heavy primary-to-black gradient */}
       <div
         className="hero-bg absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
@@ -976,19 +976,41 @@ const Protocol = () => {
     const ctx = gsap.context(() => {
       const cards = gsap.utils.toArray('.protocol-card');
 
-      cards.forEach((card, i) => {
-        const triggerElement = i < cards.length - 1 ? cards[i + 1] : '.protocol-spacer';
+      let mm = gsap.matchMedia();
 
-        gsap.to(card, {
-          scale: 0.9,
-          opacity: 0.5,
-          filter: 'blur(10px)',
-          scrollTrigger: {
-            trigger: triggerElement,
-            start: "top 60%", // Delayed so it doesn't blur immediately
-            end: "top top",
-            scrub: true,
-          }
+      mm.add("(max-width: 767px)", () => {
+        // Mobile timeline
+        cards.forEach((card, i) => {
+          const triggerElement = i < cards.length - 1 ? cards[i + 1] : '.protocol-spacer';
+          gsap.to(card, {
+            scale: 0.9,
+            opacity: 0.5,
+            filter: 'blur(10px)',
+            scrollTrigger: {
+              trigger: triggerElement,
+              start: "top 85%", // Delayed heavily on mobile so they stack cleanly
+              end: "top top",
+              scrub: true,
+            }
+          });
+        });
+      });
+
+      mm.add("(min-width: 768px)", () => {
+        // Desktop timeline
+        cards.forEach((card, i) => {
+          const triggerElement = i < cards.length - 1 ? cards[i + 1] : '.protocol-spacer';
+          gsap.to(card, {
+            scale: 0.9,
+            opacity: 0.5,
+            filter: 'blur(10px)',
+            scrollTrigger: {
+              trigger: triggerElement,
+              start: "top 60%", // Normal delay on desktop
+              end: "top top",
+              scrub: true,
+            }
+          });
         });
       });
 
