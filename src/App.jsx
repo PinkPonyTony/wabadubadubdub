@@ -349,8 +349,8 @@ const Hero = ({ onOpenModal, setView }) => {
     return () => ctx.revert();
   }, []);
 
-  // Using a dark marble/luxury architecture image for Midnight Luxe
-  const bgImage = "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?q=80&w=2940&auto=format&fit=crop";
+  // Using a cinematic, premium executive desk / strategy session image
+  const bgImage = "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2940&auto=format&fit=crop";
 
   return (
     <section ref={containerRef} className="relative flex h-[100dvh] w-full items-center p-6 md:p-12 lg:p-24 overflow-hidden pt-24">
@@ -370,26 +370,26 @@ const Hero = ({ onOpenModal, setView }) => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
           </span>
-          <span className="font-data text-xs font-bold tracking-widest text-mid-champagne uppercase">Critical Market Deficit Detected</span>
+          <span className="font-data text-xs font-bold tracking-widest text-mid-champagne uppercase">Strategy Before Execution</span>
         </div>
 
         <h1 className="flex flex-col gap-2">
-          <span className="hero-text-1 text-3xl md:text-5xl lg:text-6xl font-sans font-bold tracking-tight text-mid-ivory/90 leading-tight">
-            While your competitors burn capital on noise,
+          <span className="hero-text-1 text-3xl md:text-5xl lg:text-5xl font-sans font-bold tracking-tight text-mid-ivory/90 leading-tight">
+            I don't "make websites" or "shoot videos."
           </span>
-          <span className="hero-text-2 font-drama text-6xl md:text-8xl lg:text-[10rem] italic leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-mid-champagne via-[#E5D3A1] to-mid-champagne drop-shadow-2xl mt-[-10px]">
-            I Architect Authority.
+          <span className="hero-text-2 font-drama text-6xl md:text-8xl lg:text-[8rem] italic leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-mid-champagne via-[#E5D3A1] to-mid-champagne drop-shadow-2xl mt-[-10px]">
+            I Design Perception <br /> That Drives Revenue.
           </span>
         </h1>
 
         <p className="hero-text-1 mt-8 max-w-2xl text-lg md:text-xl font-sans font-light leading-relaxed text-mid-ivory/60 border-l-2 border-mid-champagne/30 pl-6">
-          I design field-tested marketing systems that exploit cognitive biases and structural leverage. This isn't branding. This is the calculated acquisition of profound market dominance.
+          For ambitious Balkan business owners who need clarity, authority, and serious growth. I architect the high-level marketing strategy that makes your execution actually convert.
         </p>
 
         <div className="hero-cta mt-12 flex flex-col gap-6">
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
             <MagneticButton onClick={onOpenModal} className="bg-mid-ivory text-mid-obsidian px-8 py-4 text-lg font-bold hover:bg-white shadow-[0_0_30px_rgba(255,255,255,0.1)] group">
-              Apply for Deployment <ArrowRight className="ml-2 inline h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              Book Strategy Session <ArrowRight className="ml-2 inline h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </MagneticButton>
             <div className="font-data text-xs text-mid-ivory/40 uppercase tracking-widest flex flex-col gap-1">
               <span>Only accepting strategic engagements.</span>
@@ -711,12 +711,12 @@ const Features = ({ onOpenModal }) => {
             <div className="absolute inset-0 bg-mid-champagne/5 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             <DiagnosticShuffler />
           </div>
-          <span className="font-data text-xs text-mid-champagne tracking-widest uppercase mb-3 block">01 // Forensic Audit</span>
-          <h3 className="font-sans text-3xl font-bold tracking-tight text-mid-ivory mb-4">Strategic Diagnostics</h3>
+          <span className="font-data text-xs text-mid-champagne tracking-widest uppercase mb-3 block">01 // Foundation</span>
+          <h3 className="font-sans text-3xl font-bold tracking-tight text-mid-ivory mb-4">Brand Positioning</h3>
           <ul className="space-y-3 font-sans font-light text-mid-ivory/60 text-sm mb-6 flex-1">
-            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Extracting leverage from operational data.</li>
-            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Identifying critical conversion friction points.</li>
-            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Pressure-testing brand positioning.</li>
+            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Designing perception that dictates pricing power.</li>
+            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Identifying and exploiting competitor voids.</li>
+            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Structuring logical arguments for emotional buys.</li>
           </ul>
         </div>
 
@@ -726,12 +726,12 @@ const Features = ({ onOpenModal }) => {
             <div className="absolute inset-0 bg-mid-champagne/5 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
             <TelemetryTypewriter />
           </div>
-          <span className="font-data text-xs text-mid-champagne tracking-widest uppercase mb-3 block">02 // Structural Design</span>
-          <h3 className="font-sans text-3xl font-bold tracking-tight text-mid-ivory mb-4">Authority Architecture</h3>
+          <span className="font-data text-xs text-mid-champagne tracking-widest uppercase mb-3 block">02 // Communication</span>
+          <h3 className="font-sans text-3xl font-bold tracking-tight text-mid-ivory mb-4">Messaging Architecture</h3>
           <ul className="space-y-3 font-sans font-light text-mid-ivory/60 text-sm mb-6 flex-1">
-            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Engineering perception vs fighting for attention.</li>
-            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Deploying high-fidelity market signals.</li>
-            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Eliminating the need to compete on price.</li>
+            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Translating complex value into sharp, unavoidable copy.</li>
+            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Building sales narratives that close deals on autopilot.</li>
+            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Eradicating generic, invisible corporate jargon.</li>
           </ul>
         </div>
 
@@ -742,11 +742,11 @@ const Features = ({ onOpenModal }) => {
             <ProtocolScheduler onOpenModal={onOpenModal} />
           </div>
           <span className="font-data text-xs text-mid-champagne tracking-widest uppercase mb-3 block">03 // Execution Engine</span>
-          <h3 className="font-sans text-3xl font-bold tracking-tight text-mid-ivory mb-4">Enduring Campaigns</h3>
+          <h3 className="font-sans text-3xl font-bold tracking-tight text-mid-ivory mb-4">Market Authority Building</h3>
           <ul className="space-y-3 font-sans font-light text-mid-ivory/60 text-sm mb-6 flex-1">
-            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Launching assets that build compounding equity.</li>
-            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Overriding short-term competitor noise.</li>
-            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Securing permanent market leverage.</li>
+            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Launching campaigns that build compounding equity.</li>
+            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Directing high-end content and event concepts.</li>
+            <li className="flex items-start gap-2"><ArrowRight className="w-4 h-4 text-mid-champagne mt-0.5 shrink-0" /> Securing permanent and unshakeable market leverage.</li>
           </ul>
         </div>
 
@@ -791,10 +791,11 @@ const Philosophy = () => {
     return () => ctx.revert();
   }, []);
 
-  const bgImage = "https://images.unsplash.com/photo-1596704017254-9b121068fb31?q=80&w=2000&auto=format&fit=crop";
+  // Using a strategic whiteboard / planning session image
+  const bgImage = "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2940&auto=format&fit=crop";
 
-  const smallText = "Most strategic marketing focuses on:";
-  const smallTextHighlight = "short-term noise and visible names.";
+  const smallText = "Most marketing focuses on:";
+  const smallTextHighlight = "random tactics and execution.";
 
   const bigTextWords = "I focus on:".split(' ');
 
@@ -815,7 +816,7 @@ const Philosophy = () => {
             <span key={i} className="philosophy-word block">{word}</span>
           ))}
           <span className="philosophy-word block font-drama italic text-mid-champagne mt-4 w-full text-6xl md:text-8xl lg:text-9xl">
-            Architecting Authority.
+            Strategy That Converts.
           </span>
         </h2>
       </div>
@@ -1086,12 +1087,12 @@ const FinalCTA = ({ onOpenModal }) => {
           <span className="font-drama italic text-mid-champagne font-normal text-6xl md:text-7xl lg:text-8xl w-full block mt-2">Unfair Leverage?</span>
         </h2>
         <p className="relative z-10 font-sans text-lg font-light text-mid-ivory/60 max-w-2xl mx-auto mb-16">
-          Stop competing on visible names and short-term noise. Start commanding the market with undeniable authority. I design the environment; you collect the outcome.
+          For ambitious Balkan businesses ready for serious growth. Stop competing on visible names and short-term noise. Start commanding the market with undeniable authority. I design the environment; you collect the outcome.
         </p>
 
         <div className="relative z-10 flex flex-col items-center">
           <MagneticButton onClick={onOpenModal} className="bg-mid-ivory text-mid-obsidian px-10 py-5 text-xl font-bold hover:bg-white shadow-[0_0_40px_rgba(255,255,255,0.1)] group transition-all">
-            Application for Deployment <ArrowRight className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            Book Strategy Session <ArrowRight className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </MagneticButton>
           <div className="mt-6 flex flex-col gap-1 text-center">
             <span className="font-data text-xs text-mid-ivory/40 uppercase tracking-widest">Only accepting strategic engagements.</span>
@@ -1482,12 +1483,12 @@ const BlogIndex = ({ onOpenContactModal }) => {
                   </div>
 
                   <div className="border-t border-white/10 pt-6">
-                    <h5 className="font-data text-xs text-mid-champagne tracking-widest uppercase mb-4">Core Competencies</h5>
+                    <h5 className="font-data text-xs text-mid-champagne tracking-widest uppercase mb-4">Core Capabilities</h5>
                     <ul className="space-y-2 font-sans font-light text-sm text-mid-ivory/80">
-                      <li>Strategic Communication & SMM</li>
-                      <li>High-Fidelity Asset Production</li>
-                      <li>UI/UX & Structural Design</li>
-                      <li>Authority Architecture (Leadership)</li>
+                      <li>Brand Positioning & Strategy</li>
+                      <li>Messaging Architecture</li>
+                      <li>Launch Strategy & Concept Direction</li>
+                      <li>Market Authority Building</li>
                     </ul>
                   </div>
 
@@ -1513,7 +1514,7 @@ const BlogIndex = ({ onOpenContactModal }) => {
                       <h5 className="font-sans text-xl font-bold text-mid-ivory mt-2">Client Success & Direct Sales Expert</h5>
                       <p className="font-sans text-mid-champagne/80 text-sm mt-1">Boreas - IQOS</p>
                       <p className="font-sans text-mid-ivory/70 mt-3 font-light leading-relaxed">
-                        Architecting direct consumer perception and brand authority in high-ticket retail environments. Executing strategic communication and personalized consultations to drive rapid acquisition and product education.
+                        Mastering the psychological architecture of direct consumer perception in high-ticket environments. Executing strategic communication to drive rapid acquisition and conversion.
                       </p>
                     </div>
 
@@ -1524,7 +1525,7 @@ const BlogIndex = ({ onOpenContactModal }) => {
                       <h5 className="font-sans text-xl font-bold text-mid-ivory mt-2">Digital Leverage Strategist</h5>
                       <p className="font-sans text-mid-champagne/80 text-sm mt-1">Generation Success</p>
                       <p className="font-sans text-mid-ivory/70 mt-3 font-light leading-relaxed">
-                        Engineered comprehensive digital distribution strategies to dominate market visibility. Managed ecosystem growth and optimized visual narratives for maximum community capture.
+                        Engineered comprehensive digital distribution strategies to dominate market visibility. Managed ecosystem growth and optimized high-level narratives for maximum community capture.
                       </p>
                     </div>
 
@@ -1532,10 +1533,10 @@ const BlogIndex = ({ onOpenContactModal }) => {
                     <div className="relative">
                       <div className="absolute -left-[7px] lg:-left-[55px] top-1.5 w-3 h-3 rounded-full bg-mid-slate ring-4 ring-mid-obsidian"></div>
                       <span className="font-data text-xs text-mid-ivory/50 tracking-widest uppercase">2021 — 2023</span>
-                      <h5 className="font-sans text-xl font-bold text-mid-ivory mt-2">Creative Architect & Visual Designer</h5>
+                      <h5 className="font-sans text-xl font-bold text-mid-ivory mt-2">Creative Director / Structural Architect</h5>
                       <p className="font-sans text-mid-champagne/80 text-sm mt-1">Korpa.ba</p>
                       <p className="font-sans text-mid-ivory/70 mt-3 font-light leading-relaxed">
-                        Designed the visual touchpoints for a leading logistics delivery platform. Maintained strict brand consistency and aesthetic authority across nationwide marketing campaigns.
+                        Directed the overarching visual positioning for a leading logistics delivery platform. Maintained strict brand authority and dictated aesthetic strategy across nationwide offline and digital campaigns.
                       </p>
                     </div>
 
@@ -1546,7 +1547,7 @@ const BlogIndex = ({ onOpenContactModal }) => {
                       <h5 className="font-sans text-xl font-bold text-mid-ivory mt-2">Perception Director</h5>
                       <p className="font-sans text-mid-champagne/80 text-sm mt-1">Deepware.ai</p>
                       <p className="font-sans text-mid-ivory/70 mt-3 font-light leading-relaxed">
-                        Directed the structural visual identity for a high-innovation tech brand. Translated complex data models into aggressive, market-ready aesthetics.
+                        Directed the structural identity for a high-innovation tech brand. Translated complex data models into aggressive, market-ready positioning.
                       </p>
                     </div>
 
@@ -1554,10 +1555,10 @@ const BlogIndex = ({ onOpenContactModal }) => {
                     <div className="relative">
                       <div className="absolute -left-[7px] lg:-left-[55px] top-1.5 w-3 h-3 rounded-full bg-mid-slate ring-4 ring-mid-obsidian"></div>
                       <span className="font-data text-xs text-mid-ivory/50 tracking-widest uppercase">2019 — 2020</span>
-                      <h5 className="font-sans text-xl font-bold text-mid-ivory mt-2">Lead Visual Producer</h5>
+                      <h5 className="font-sans text-xl font-bold text-mid-ivory mt-2">Marketing Strategist & Concept Director</h5>
                       <p className="font-sans text-mid-champagne/80 text-sm mt-1">Geek Design</p>
                       <p className="font-sans text-mid-ivory/70 mt-3 font-light leading-relaxed">
-                        Owned end-to-end asset production, from storyboarding to post-production editing. Architected strategic visual narratives and managed client acquisition lifecycles.
+                        Owned high-level campaign conceptualization and directed asset production. Architected strategic visual narratives and managed client acquisition lifecycles.
                       </p>
                     </div>
 
@@ -1565,10 +1566,10 @@ const BlogIndex = ({ onOpenContactModal }) => {
                     <div className="relative">
                       <div className="absolute -left-[7px] lg:-left-[55px] top-1.5 w-3 h-3 rounded-full bg-mid-slate ring-4 ring-mid-obsidian"></div>
                       <span className="font-data text-xs text-mid-ivory/50 tracking-widest uppercase">2016 — 2019</span>
-                      <h5 className="font-sans text-xl font-bold text-mid-ivory mt-2">Marketing & Design Associate</h5>
+                      <h5 className="font-sans text-xl font-bold text-mid-ivory mt-2">Marketing & Perception Associate</h5>
                       <p className="font-sans text-mid-champagne/80 text-sm mt-1">Peruso - Lampica</p>
                       <p className="font-sans text-mid-ivory/70 mt-3 font-light leading-relaxed">
-                        Built foundational data on consumer behavior through asset creation and rigorous campaign execution.
+                        Built foundational knowledge on consumer behavior through rigorous campaign execution and strategy formulation.
                       </p>
                     </div>
                   </div>
@@ -1581,13 +1582,13 @@ const BlogIndex = ({ onOpenContactModal }) => {
                 <h4 className="font-drama text-4xl italic text-mid-champagne mb-8">The Philosophy</h4>
                 <div className="text-mid-ivory/80 font-light text-lg leading-relaxed max-w-3xl space-y-6">
                   <p>
-                    I do not believe in standard "marketing." Most agencies focus on noise: more posts, more ads, more visible movement. They confuse activity with leverage.
+                    I do not "make websites." I do not "shoot videos."
                   </p>
                   <p>
-                    I operate differently. My background is in behavioral psychology and data analysis. I look at markets as systems of perception. If you want to dominate a market, you don't out-shout your competitors; you redesign the environment so that choosing anyone else feels inherently risky to the prospect.
+                    Most agencies confuse tactical execution with market leverage. They try to out-shout your competitors by doing the exact same things, just slightly louder. They focus on aesthetics without logic.
                   </p>
                   <p>
-                    We build <strong className="font-bold text-mid-ivory">Authority Positions</strong>. We map out the biases of your target audience, configure the exact signals they unconsciously trust, and deploy them systematically. The result is a frictionless sales floor where you dictate the terms.
+                    I operate with a creative director's eye and a ruthless sales logic. Before a single asset is generated, we map the psychological architecture of your market. I design the foundational strategy that makes your execution unavoidable, converting abstract value into <strong className="font-bold text-mid-ivory">Total Market Authority.</strong>
                   </p>
                 </div>
               </div>
