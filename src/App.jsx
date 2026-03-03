@@ -266,7 +266,7 @@ const Navbar = ({ onOpenModal, currentView, setView }) => {
     <nav className="fixed left-0 right-0 top-6 z-50 px-4 pointer-events-none">
       <div className={`mx-auto flex max-w-5xl items-center justify-between rounded-full px-6 py-4 pointer-events-auto transition-all duration-500 overflow-hidden transform-gpu ${scrolled || currentView !== 'home' ? 'bg-glass shadow-2xl scale-100' : 'bg-transparent scale-105'}`}>
         <div className="flex items-center gap-2 cursor-pointer" onClick={() => { setView('home'); window.scrollTo(0, 0); }}>
-          <span className="text-3xl font-signature tracking-tight text-mid-ivory drop-shadow-md">Tarik O.<span className="text-mid-champagne"></span></span>
+          <span className="text-xl md:text-3xl font-signature tracking-tight text-mid-ivory drop-shadow-md">Tarik O.<span className="text-mid-champagne"></span></span>
         </div>
 
         <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-mid-ivory/70">
@@ -276,7 +276,7 @@ const Navbar = ({ onOpenModal, currentView, setView }) => {
         </ul>
 
         <div className="flex items-center gap-4">
-          <MagneticButton onClick={onOpenModal} className="bg-mid-champagne text-mid-obsidian px-5 py-2 text-sm font-semibold hover:bg-mid-champagne-dark">
+          <MagneticButton onClick={onOpenModal} className="bg-mid-champagne text-mid-obsidian px-3 py-1.5 md:px-5 md:py-2 text-[10px] md:text-sm font-semibold hover:bg-mid-champagne-dark whitespace-nowrap">
             Bring Me the Problem
           </MagneticButton>
         </div>
@@ -353,7 +353,7 @@ const Hero = ({ onOpenModal, setView }) => {
   const bgImage = "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2940&auto=format&fit=crop";
 
   return (
-    <section ref={containerRef} className="relative flex h-[100dvh] w-full items-center p-6 pt-32 md:pt-24 md:p-12 lg:p-24 overflow-hidden">
+    <section ref={containerRef} className="relative flex min-h-[100dvh] w-full flex-col justify-center p-6 pt-36 md:pt-32 md:p-12 lg:p-24 overflow-hidden">
       {/* Background with heavy primary-to-black gradient */}
       <div
         className="hero-bg absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
@@ -364,7 +364,7 @@ const Hero = ({ onOpenModal, setView }) => {
         <div className="absolute inset-0 bg-black/40 shadow-[inset_0_0_150px_rgba(0,0,0,0.9)]"></div>
       </div>
 
-      <div className="relative z-10 w-full max-w-5xl pb-12 mt-12">
+      <div className="relative z-10 w-full max-w-5xl pb-16 mt-8 md:mt-12 flex-1 flex flex-col justify-center">
         <div className="hero-text-1 mb-6 inline-flex items-center gap-3 rounded-full border border-mid-champagne/20 bg-mid-champagne/5 px-4 py-1.5 backdrop-blur-sm">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
@@ -377,7 +377,7 @@ const Hero = ({ onOpenModal, setView }) => {
           <span className="hero-text-1 text-3xl md:text-5xl lg:text-5xl font-sans font-bold tracking-tight text-mid-ivory/90 leading-tight">
             I don't "make websites" or "shoot videos."
           </span>
-          <span className="hero-text-2 font-drama text-6xl md:text-8xl lg:text-[8rem] italic leading-none tracking-tighter text-mid-champagne drop-shadow-2xl mt-[-10px]">
+          <span className="hero-text-2 font-drama text-[3.5rem] leading-[1.1] md:text-8xl lg:text-[8rem] italic md:leading-none tracking-tighter text-mid-champagne drop-shadow-2xl mt-0 md:mt-[-10px]">
             I Design Perception <br /> That Drives Revenue.
           </span>
         </h1>
@@ -979,7 +979,7 @@ const Protocol = () => {
       let mm = gsap.matchMedia();
 
       mm.add("(max-width: 767px)", () => {
-        // Mobile timeline
+        // Mobile timeline: Wait much longer to blur so content is readable on smaller viewports
         cards.forEach((card, i) => {
           const triggerElement = i < cards.length - 1 ? cards[i + 1] : '.protocol-spacer';
           gsap.to(card, {
@@ -988,7 +988,7 @@ const Protocol = () => {
             filter: 'blur(10px)',
             scrollTrigger: {
               trigger: triggerElement,
-              start: "top 85%", // Delayed heavily on mobile so they stack cleanly
+              start: "top 40%", // Start blurring when next card is 40% down the screen
               end: "top top",
               scrub: true,
             }
@@ -1006,7 +1006,7 @@ const Protocol = () => {
             filter: 'blur(10px)',
             scrollTrigger: {
               trigger: triggerElement,
-              start: "top 60%", // Normal delay on desktop
+              start: "top 30%", // Start blurring when next card is 30% down the screen
               end: "top top",
               scrub: true,
             }
