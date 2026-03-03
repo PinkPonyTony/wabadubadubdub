@@ -333,7 +333,7 @@ const LiveTelemetry = () => {
 };
 
 // Hero Section: "The Opening Shot"
-const Hero = ({ onOpenModal }) => {
+const Hero = ({ onOpenModal, setView }) => {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -386,13 +386,24 @@ const Hero = ({ onOpenModal }) => {
           I design field-tested marketing systems that exploit cognitive biases and structural leverage. This isn't branding. This is the calculated acquisition of profound market dominance.
         </p>
 
-        <div className="hero-cta mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-6">
-          <MagneticButton onClick={onOpenModal} className="bg-mid-ivory text-mid-obsidian px-8 py-4 text-lg font-bold hover:bg-white shadow-[0_0_30px_rgba(255,255,255,0.1)] group">
-            Apply for Deployment <ArrowRight className="ml-2 inline h-5 w-5 group-hover:translate-x-1 transition-transform" />
-          </MagneticButton>
-          <div className="font-data text-xs text-mid-ivory/40 uppercase tracking-widest flex flex-col gap-1">
-            <span>Only accepting strategic engagements.</span>
-            <span className="text-mid-champagne">Capacity: Limited</span>
+        <div className="hero-cta mt-12 flex flex-col gap-6">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+            <MagneticButton onClick={onOpenModal} className="bg-mid-ivory text-mid-obsidian px-8 py-4 text-lg font-bold hover:bg-white shadow-[0_0_30px_rgba(255,255,255,0.1)] group">
+              Apply for Deployment <ArrowRight className="ml-2 inline h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </MagneticButton>
+            <div className="font-data text-xs text-mid-ivory/40 uppercase tracking-widest flex flex-col gap-1">
+              <span>Only accepting strategic engagements.</span>
+              <span className="text-mid-champagne">Capacity: Limited</span>
+            </div>
+          </div>
+
+          <div className="flex gap-4 mt-2">
+            <button onClick={() => { setView('biases'); window.scrollTo(0, 0); }} className="px-6 py-3 border border-white/10 bg-white/5 rounded-full text-sm font-semibold text-mid-ivory hover:bg-white/10 hover:border-mid-champagne/50 transition-all">
+              Explore the Biases Index
+            </button>
+            <button onClick={() => { setView('blog'); window.scrollTo(0, 0); }} className="px-6 py-3 border border-white/10 bg-white/5 rounded-full text-sm font-semibold text-mid-ivory hover:bg-white/10 hover:border-mid-champagne/50 transition-all">
+              Read Latest Dispatches
+            </button>
           </div>
         </div>
       </div>
@@ -965,16 +976,6 @@ const Protocol = () => {
       const cards = gsap.utils.toArray('.protocol-card');
 
       cards.forEach((card, i) => {
-        // Shorter pinning distance per card
-        ScrollTrigger.create({
-          trigger: card,
-          start: "top top",
-          end: "+=50%", // Pins for only half a viewport height
-          pin: true,
-          pinSpacing: false,
-          id: `card-${i}`
-        });
-
         if (i < cards.length - 1) {
           gsap.to(card, {
             scale: 0.9,
@@ -983,7 +984,7 @@ const Protocol = () => {
             scrollTrigger: {
               trigger: cards[i + 1],
               start: "top bottom",
-              end: "top 20%", // Transitions much faster
+              end: "top top", // Transitions natively over the height of the screen
               scrub: true,
             }
           });
@@ -1001,15 +1002,19 @@ const Protocol = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="relative w-full bg-mid-obsidian pb-24 border-b border-white/5">
+    <div ref={containerRef} className="relative w-full bg-mid-obsidian pb-[20vh] border-b border-white/5 flex flex-col">
       {steps.map((step, index) => (
-        <section key={index} className="protocol-card flex h-[100dvh] w-full items-center justify-center p-6 md:p-12 lg:p-24 absolute top-0">
+        <section
+          key={index}
+          className="protocol-card flex h-[100dvh] w-full items-center justify-center p-6 md:p-12 lg:p-24 sticky top-0 overflow-hidden pointer-events-none"
+          style={{ paddingTop: `${index * 2}rem` }} // Slight offset so they stack visibly
+        >
           {/* Typographical Watermark */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-drama text-[15rem] md:text-[25rem] text-white/[0.02] whitespace-nowrap z-0 select-none pointer-events-none italic font-bold">
             {step.watermark}
           </div>
 
-          <div className="flex w-full max-w-6xl flex-col md:flex-row items-center gap-12 rounded-3xl bg-glass border border-white/10 p-8 md:p-16 shadow-[0_0_50px_rgba(0,0,0,0.5)] backdrop-blur-3xl relative z-10 overflow-hidden group hover:border-mid-champagne/30 transition-all duration-700">
+          <div className="flex w-full max-w-6xl flex-col md:flex-row items-center gap-12 rounded-3xl bg-glass border border-white/10 p-8 md:p-16 shadow-[0_0_50px_rgba(0,0,0,0.5)] backdrop-blur-3xl relative z-10 overflow-hidden group hover:border-mid-champagne/30 transition-all duration-700 pointer-events-auto">
             {/* Ambient glow behind visual */}
             <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-mid-champagne/5 blur-[100px] rounded-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 
@@ -1195,6 +1200,7 @@ const Footer = ({ setView, onOpenContactModal, onOpenTextModal }) => {
 // Contact Modal Layer
 const ContactModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({ name: '', number: '', email: '', message: '' });
+  const [status, setStatus] = useState('idle'); // idle, submitting, success, error
 
   useEffect(() => {
     if (isOpen) {
@@ -1203,40 +1209,84 @@ const ContactModal = ({ isOpen, onClose }) => {
       gsap.fromTo('.modal-content', { y: 50, opacity: 0, scale: 0.95 }, { y: 0, opacity: 1, scale: 1, duration: 0.4, ease: 'power3.out' });
     } else {
       document.body.style.overflow = '';
+      setStatus('idle'); // reset on close
     }
   }, [isOpen]);
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Strategic Architecture Inquiry - ${formData.name}`);
-    const body = encodeURIComponent(`Name: ${formData.name}\nPhone: ${formData.number}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`);
-    window.location.href = `mailto:3008.tcc@gmail.com?subject=${subject}&body=${body}`;
-    onClose();
+    setStatus('submitting');
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          // IMPORTANT: User must replace this with their actual Web3Forms access key
+          access_key: "0956583d-d0c7-4bc5-866c-796b416a87ea",
+          name: formData.name,
+          email: formData.email,
+          phone: formData.number,
+          message: formData.message,
+          subject: `Strategic Architecture Inquiry - ${formData.name}`,
+          from_name: "Tarik Omerović Platform"
+        }),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setStatus('success');
+        setTimeout(() => {
+          onClose();
+          setFormData({ name: '', number: '', email: '', message: '' });
+          setStatus('idle');
+        }, 3000);
+      } else {
+        setStatus('error');
+        setTimeout(() => setStatus('idle'), 3000);
+      }
+    } catch (error) {
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 3000);
+    }
   };
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center px-4">
       <div className="modal-backdrop absolute inset-0 bg-mid-obsidian/80 backdrop-blur-xl" onClick={onClose}></div>
-      <div className="modal-content relative w-full max-w-lg rounded-3xl bg-mid-slate-light border border-white/10 p-8 shadow-2xl">
-        <button onClick={onClose} className="absolute right-6 top-6 text-mid-ivory/50 hover:text-mid-ivory transition-colors">
+      <div className="modal-content relative w-full max-w-lg rounded-3xl bg-mid-slate-light border border-white/10 p-8 shadow-2xl overflow-hidden pointer-events-auto">
+
+        {/* Success Overlay */}
+        <div className={`absolute inset-0 z-50 bg-mid-slate-light flex flex-col items-center justify-center transition-all duration-500 ${status === 'success' ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}`}>
+          <div className="w-16 h-16 rounded-full bg-mid-champagne/20 flex items-center justify-center mb-6">
+            <CheckCircle2 className="w-8 h-8 text-mid-champagne" />
+          </div>
+          <h3 className="text-2xl font-sans font-bold text-mid-ivory mb-2">Transmission Successful</h3>
+          <p className="font-light text-mid-ivory/60 text-sm text-center px-8">The system has received your data. I will review the architecture and contact you shortly.</p>
+        </div>
+
+        <button onClick={onClose} className="absolute right-6 top-6 text-mid-ivory/50 hover:text-mid-ivory transition-colors z-40">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
         </button>
 
         <h3 className="text-2xl font-sans font-bold text-mid-ivory mb-2" id="modal-title">Initiate Protocol</h3>
         <p className="font-light text-mid-ivory/60 mb-8 text-sm text-balance">Direct line to perception architecture. Brief your situation below.</p>
 
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4 relative z-30">
           <div className="grid grid-cols-2 gap-4">
-            <input required type="text" placeholder="Name" className="w-full bg-mid-obsidian border border-white/5 rounded-xl px-4 py-3 text-sm text-mid-ivory focus:outline-none focus:border-mid-champagne/50 transition-colors" onChange={e => setFormData({ ...formData, name: e.target.value })} />
-            <input type="tel" placeholder="Phone (Optional)" className="w-full bg-mid-obsidian border border-white/5 rounded-xl px-4 py-3 text-sm text-mid-ivory focus:outline-none focus:border-mid-champagne/50 transition-colors" onChange={e => setFormData({ ...formData, number: e.target.value })} />
+            <input required disabled={status === 'submitting'} type="text" placeholder="Name" className="w-full bg-mid-obsidian border border-white/5 rounded-xl px-4 py-3 text-sm text-mid-ivory focus:outline-none focus:border-mid-champagne/50 transition-colors disabled:opacity-50" value={formData.name} onChange={e => setFormData({ ...formData, name: e.target.value })} />
+            <input type="tel" disabled={status === 'submitting'} placeholder="Phone (Optional)" className="w-full bg-mid-obsidian border border-white/5 rounded-xl px-4 py-3 text-sm text-mid-ivory focus:outline-none focus:border-mid-champagne/50 transition-colors disabled:opacity-50" value={formData.number} onChange={e => setFormData({ ...formData, number: e.target.value })} />
           </div>
-          <input required type="email" placeholder="Email" className="w-full bg-mid-obsidian border border-white/5 rounded-xl px-4 py-3 text-sm text-mid-ivory focus:outline-none focus:border-mid-champagne/50 transition-colors" onChange={e => setFormData({ ...formData, email: e.target.value })} />
-          <textarea required rows="4" placeholder="The Problem / Objective" className="w-full bg-mid-obsidian border border-white/5 rounded-xl px-4 py-3 text-sm text-mid-ivory focus:outline-none focus:border-mid-champagne/50 transition-colors resize-none" onChange={e => setFormData({ ...formData, message: e.target.value })}></textarea>
+          <input required disabled={status === 'submitting'} type="email" placeholder="Email" className="w-full bg-mid-obsidian border border-white/5 rounded-xl px-4 py-3 text-sm text-mid-ivory focus:outline-none focus:border-mid-champagne/50 transition-colors disabled:opacity-50" value={formData.email} onChange={e => setFormData({ ...formData, email: e.target.value })} />
+          <textarea required disabled={status === 'submitting'} rows="4" placeholder="The Problem / Objective" className="w-full bg-mid-obsidian border border-white/5 rounded-xl px-4 py-3 text-sm text-mid-ivory focus:outline-none focus:border-mid-champagne/50 transition-colors resize-none disabled:opacity-50" value={formData.message} onChange={e => setFormData({ ...formData, message: e.target.value })}></textarea>
 
-          <button type="submit" className="mt-4 w-full bg-mid-champagne text-mid-obsidian font-bold py-4 rounded-xl hover:bg-mid-champagne-dark transition-colors tracking-wide">
-            TRANSMIT
+          <button type="submit" disabled={status === 'submitting'} className={`mt-4 w-full font-bold py-4 rounded-xl transition-all tracking-wide ${status === 'error' ? 'bg-red-500/20 text-red-500 border border-red-500/50 hover:bg-red-500/30' : 'bg-mid-champagne text-mid-obsidian hover:bg-mid-champagne-dark'}`}>
+            {status === 'submitting' ? 'TRANSMITTING...' : status === 'error' ? 'TRANSMISSION FAILED - RETRY' : 'TRANSMIT'}
           </button>
         </form>
       </div>
@@ -1611,7 +1661,7 @@ function App() {
 
       {currentView === 'home' && (
         <main className="w-full relative z-10 animate-fade-in-up">
-          <Hero onOpenModal={handleOpenModal} />
+          <Hero onOpenModal={handleOpenModal} setView={setCurrentView} />
           <AuthorityDataModule />
           <div className="relative z-10 bg-mid-obsidian pb-12 pt-24 text-center">
             <h2 className="font-sans text-4xl md:text-5xl font-bold tracking-tight text-mid-ivory mb-4">The Architecture.</h2>
