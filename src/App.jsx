@@ -1383,7 +1383,7 @@ Depending on your nationality, visas might be required. Don't let a paperwork ov
 You can check the official, up-to-date regulations on the <a href="https://mup.gov.hr/ministry/119" target="_blank" rel="noopener noreferrer" class="text-mid-champagne font-bold hover:text-white underline decoration-mid-champagne/30 transition-colors">Ministry of Interior of the Republic of Croatia website</a>.
 
 The way you choose to travel reveals how you value your time. You can rush towards the finish line and forget the hours in between. Or, you can refuse to rush. You can choose to make the space between the dots the most memorable part of your trip. Don't just transfer. Explore.`,
-    image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1600&auto=format&fit=crop",
+    image: "/media/blog-image-main-dubrovnik.jpg",
     date: "03.09.2026"
   },
   {
