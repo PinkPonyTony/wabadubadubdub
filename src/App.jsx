@@ -1320,7 +1320,69 @@ const blogPosts = [
     id: 1,
     title: "The Sarajevo to Dubrovnik Dilemma: Why Your Travel Day Shouldn't Be a Wasted Day",
     concept: "Looking for the best way to get from Sarajevo to Dubrovnik? Discover the psychology of travel, transport options, and how to turn a boring ride into an epic tour.",
-    content: "You are staring at a map. Sarajevo is here. Dubrovnik is there. It looks like a simple point A to point B problem. Most travelers treat it exactly like that. They view transit days as dead time, a necessary evil between two beautiful destinations.\n\nBut why do we willingly surrender a full day of our vacation to boredom? We focus so much on the destination that we mentally delete the geography in between. But the space between these two cities isn't just an empty road. It's the heart of the Balkans. Let's explore the strategy of getting from Sarajevo to Dubrovnik, and why the path of least resistance is rarely the best choice.\n\nTHE STANDARD OPTIONS: A STRATEGIC BREAKDOWN\n\nHuman behavior dictates that when faced with a logistical problem, we look for the most obvious solutions first. Let's analyze them.\n\nThe Bus: The Passive Choice\nTaking a bus from Sarajevo to Dubrovnik is the default for many. It’s affordable. You buy a ticket, sit back, and give up control. But you also surrender the experience. You are locked in a metal box for six hours. You drive past centuries of history without stopping. It solves the transport problem, but it completely wastes your time.\n\nRent-a-Car: The Illusion of Freedom\nRenting a car feels like a strategic win. You make your own schedule. You can stop anywhere. Then the reality of cross-border logistics hits you. Driving in the Balkans requires intense focus. Dropping off a Bosnian rental car in Croatia often triggers massive \"one-way drop-off\" fees. Instead of enjoying the landscape, you spend your day calculating hidden costs and navigating unfamiliar roads.\n\nPrivate Transfer: The Luxury Trap\nA direct private transfer is comfortable and fast. It removes the stress. But it’s a high price to pay just to move faster through a landscape that deserves to be moved through slowly. You are paying a premium to skip the best parts of the region.\n\nTHE ULTIMATE STRATEGY: UPGRADING YOUR TRANSIT\n\nStrategy is about maximizing leverage. How do you take a sunk cost, a mandatory travel day, and turn it into a high-return asset? You don't just book a ride. You book a narrative. This is where the Sarajevo to Dubrovnik Tour via Mostar, Blagaj, Počitelj, and Kravica Waterfall changes the equation entirely.\n\nIt stops treating the journey as a logistical hurdle. It reframes it as an expedition. Instead of enduring the trip, you experience it. Think about the psychological shift. You aren't losing a day to transit. You are gaining an immersive, guided exploration of Herzegovina.\n\nYou walk across the iconic stone arch of Mostar. You feel the ancient calm of the Dervish house in Blagaj. You climb the medieval fortress walls of Počitelj. You stand in front of the roaring Kravica Waterfall.\n\nBy combining your transport with a full-day tour, you hack your itinerary. You save the money you would have spent on separate day trips from Dubrovnik, and you arrive at your hotel having actually lived the journey.\n\nBORDERS AND Visas: A REALITY CHECK\n\nEven the best strategy requires acknowledging reality. You are leaving Bosnia and Herzegovina and entering Croatia. This isn't just a line on a map. You are moving from a non-EU country into the European Union and the Schengen zone. Passports are strictly non-negotiable.\n\nDepending on your nationality, visas might be required. Don't let a paperwork oversight ruin a perfectly planned day. Human error is the enemy of a good travel strategy. Always verify your specific entry requirements well in advance. You can check the official, up-to-date regulations on the Ministry of Interior of the Republic of Croatia website.\n\nThe way you choose to travel reveals how you value your time. You can rush towards the finish line and forget the hours in between. Or, you can refuse to rush. You can choose to make the space between the dots the most memorable part of your trip. Don't just transfer. Explore.",
+    content: `<div class="bg-mid-champagne/5 border border-white/5 rounded-2xl p-6 mb-8 mt-4">
+  <h4 class="font-sans font-bold text-mid-champagne text-sm md:text-lg mb-4 uppercase tracking-widest">Table of Contents</h4>
+  <ul class="space-y-3">
+    <li><a href="#the-logistical-reality" class="hover:text-mid-champagne transition-colors underline decoration-white/20 underline-offset-4">1. The Logistical Reality</a></li>
+    <li><a href="#the-standard-options" class="hover:text-mid-champagne transition-colors underline decoration-white/20 underline-offset-4">2. The Standard Options: A Strategic Breakdown</a></li>
+    <li><a href="#the-ultimate-strategy" class="hover:text-mid-champagne transition-colors underline decoration-white/20 underline-offset-4">3. The Ultimate Strategy: Architecting the Journey</a></li>
+    <li><a href="#borders-and-visas" class="hover:text-mid-champagne transition-colors underline decoration-white/20 underline-offset-4">4. Borders and Visas: A Reality Check</a></li>
+  </ul>
+</div>
+
+<h3 id="the-logistical-reality" class="text-2xl font-bold text-mid-ivory mt-12 mb-6">1. The Logistical Reality</h3>
+
+You are staring at a map. Sarajevo is here. Dubrovnik is there. It looks like a simple point A to point B problem. Most travelers treat it exactly like that. They view transit days as dead time, a necessary evil between two beautiful destinations.
+
+<img src="/media/blog-image-3.png" alt="Map Route from Sarajevo to Dubrovnik" class="w-full rounded-2xl shadow-[0_0_30px_rgba(0,0,0,0.5)] border border-white/10 my-8" />
+
+But why do we willingly surrender a full day of our vacation to boredom? We focus so much on the destination that we mentally delete the geography in between. But the space between these two cities isn't just an empty road. It's the heart of the Balkans. Let's explore the strategy of getting from Sarajevo to Dubrovnik, and why the path of least resistance is rarely the best choice.
+
+<h3 id="the-standard-options" class="text-2xl font-bold text-mid-ivory mt-12 mb-6">2. The Standard Options: A Strategic Breakdown</h3>
+
+Human behavior dictates that when faced with a logistical problem, we look for the most obvious solutions first. Let's analyze the typical modes of transport.
+
+<strong class="text-mid-ivory text-xl">The Bus: The Passive Choice</strong><br/><span class="block mt-2">Taking a bus from Sarajevo to Dubrovnik is the default for many. It’s affordable, usually costing around €20-30. You buy a ticket, sit back, and give up control. But you also surrender the experience. You are locked in a metal box for six to seven hours. You drive past centuries of history without stopping. The route is scenic, but shooting photos through a dirty, tinted window is hardly an experience. It solves the transport problem, but it completely wastes your time.</span>
+
+<strong class="text-mid-ivory text-xl mt-6 block">Rent-a-Car: The Illusion of Freedom</strong><br/><span class="block mt-2">Renting a car feels like a strategic win. You make your own schedule. You can stop anywhere. Then the reality of cross-border logistics hits you. Driving in the Balkans requires intense focus. Dropping off a Bosnian rental car in Croatia often triggers massive "one-way drop-off" fees that can run into hundreds of euros. You also need to navigate local driving habits, border queues, and unfamiliar mountain roads. Instead of enjoying the landscape, you spend your day calculating hidden costs and navigating stress.</span>
+
+<strong class="text-mid-ivory text-xl mt-6 block">Private Transfer: The Luxury Trap</strong><br/><span class="block mt-2">A direct private car or taxi transfer is comfortable and fast. It removes the stress of driving and the crowds of a bus. But it’s a high price to pay—often €200 to €300—just to move faster through a landscape that deserves to be moved through slowly. You are paying a premium to skip the best parts of the region in a sealed, air-conditioned vault.</span>
+
+<h3 id="the-ultimate-strategy" class="text-2xl font-bold text-mid-ivory mt-12 mb-6">3. The Ultimate Strategy: Architecting the Journey</h3>
+
+Strategy is about maximizing leverage. How do you take a sunk cost, a mandatory travel day, and turn it into a high-return asset? You don't just book a ride. You book a narrative. 
+
+This is where the <a href="https://dreambalkans.com/st_tour/sarajevo-to-dubrovnik-mostar-blagaj-pocitelj-kravica-waterfall/" target="_blank" rel="noopener noreferrer" class="text-mid-champagne font-bold hover:text-white underline decoration-mid-champagne/30 transition-colors">Sarajevo to Dubrovnik Tour via Mostar, Blagaj, Počitelj, and Kravica Waterfall</a> changes the equation entirely.
+
+<img src="/media/blog-image-2.jpg" alt="Mostar Old Bridge" class="w-full rounded-2xl shadow-[0_0_30px_rgba(0,0,0,0.5)] border border-white/10 my-8" />
+
+It stops treating the journey as a logistical hurdle. It reframes it as an expedition. Instead of enduring the trip, you experience it. Think about the psychological shift. You aren't losing a day to transit. You are gaining an immersive, guided exploration of Herzegovina.
+
+You walk across the iconic stone arch of Mostar. You feel the ancient calm of the Dervish house in Blagaj. You climb the medieval fortress walls of Počitelj. You stand in front of the roaring Kravica Waterfall.
+
+<img src="/media/blog-image-1.jpg" alt="Kravica Waterfalls" class="w-full rounded-2xl shadow-[0_0_30px_rgba(0,0,0,0.5)] border border-white/10 my-8" />
+
+By combining your transport with a full-day tour, you hack your itinerary. You save the money you would have spent on separate day trips from Dubrovnik (which are notoriously expensive), and you arrive at your hotel having actually lived the journey.
+
+<div class="mt-12 mb-12 bg-glass border border-mid-champagne/30 p-6 md:p-8 rounded-2xl shadow-2xl flex flex-col md:flex-row items-center gap-6 md:gap-8 group hover:border-mid-champagne transition-all">
+  <div class="flex-1 text-center md:text-left">
+    <h4 class="font-sans text-xl md:text-2xl font-bold text-mid-ivory mb-2 drop-shadow-md">Deploy the Ultimate Strategy</h4>
+    <p class="text-xs md:text-sm text-mid-ivory/70 m-0">Don't waste a day of your life in an iron box. Architect your journey through Herzegovina and arrive in Dubrovnik with leverage.</p>
+  </div>
+  <a href="https://dreambalkans.com/st_tour/sarajevo-to-dubrovnik-mostar-blagaj-pocitelj-kravica-waterfall/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-mid-champagne text-mid-obsidian px-6 md:px-8 py-3 md:py-4 rounded-full font-bold text-xs md:text-sm hover:bg-white transition-colors shadow-[0_0_20px_rgba(201,168,76,0.3)]">
+    Explore the Route
+  </a>
+</div>
+
+<h3 id="borders-and-visas" class="text-2xl font-bold text-mid-ivory mt-12 mb-6">4. Borders and Visas: A Reality Check</h3>
+
+Even the best strategy requires acknowledging reality. You are leaving Bosnia and Herzegovina and entering Croatia. This isn't just a line on a map. You are moving from a non-EU country into the European Union and the Schengen zone. Passports are strictly non-negotiable.
+
+Depending on your nationality, visas might be required. Don't let a paperwork oversight ruin a perfectly planned day. Human error is the enemy of a good travel strategy. Always verify your specific entry requirements well in advance. 
+
+You can check the official, up-to-date regulations on the <a href="https://mup.gov.hr/ministry/119" target="_blank" rel="noopener noreferrer" class="text-mid-champagne font-bold hover:text-white underline decoration-mid-champagne/30 transition-colors">Ministry of Interior of the Republic of Croatia website</a>.
+
+The way you choose to travel reveals how you value your time. You can rush towards the finish line and forget the hours in between. Or, you can refuse to rush. You can choose to make the space between the dots the most memorable part of your trip. Don't just transfer. Explore.`,
     image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=1600&auto=format&fit=crop",
     date: "03.09.2026"
   },
@@ -1411,7 +1473,7 @@ const BlogArticleModal = ({ article, onClose }) => {
 
           <div className="space-y-6">
             {article.content.split('\n\n').map((para, i) => (
-              <p key={i}>{para}</p>
+              <div key={i} dangerouslySetInnerHTML={{ __html: para }} />
             ))}
           </div>
 
