@@ -1317,6 +1317,14 @@ const ContactModal = ({ isOpen, onClose }) => {
 // Blog Data (Stolen Like An Artist from The Decision Lab, rewritten for Midnight Luxe)
 const blogPosts = [
   {
+    id: 6,
+    title: "The Illusion of Choice: Why Options Kill Authority",
+    concept: "Giving prospects a catalog of options doesn't empower them; it shifts the cognitive burden of decision-making onto their shoulders. True authority is demonstrated by prescribing a single, inevitable solution.",
+    content: "There is a pervasive myth in modern business that more choice equals better service. We build pricing tiers with endless toggles, we offer 'customized packages', and we present three different ways to solve a problem during a sales call.\n\nThis is a failure of leadership.\n\nWhen a patient goes to a top-tier surgeon, they don't want a menu of different scalpel techniques to choose from. They want the expert to diagnose the problem, prescribe the exact protocol required, and execute it unconditionally.\n\nProviding too many options is entirely a defensive maneuver. It allows the vendor to avoid taking a hard stance. But in high-level perception architecture, authority is built through absolute conviction. When you remove options, you remove friction. You train the prospect that you are the expert who dictates the terms of success.\n\nStop asking your market what they want to buy. Tell them what they need to do to dominate.",
+    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1600&auto=format&fit=crop",
+    date: "03.09.2026"
+  },
+  {
     id: 2,
     title: "Weaponized Truth: Engineering Malinformation for Market Dominance",
     concept: "We focus so much on fighting fake news, we ignore the real threat: Malinformation. These are factually accurate statements decoupled from context, surgically deployed to manipulate perception and destroy competitor trust.",
@@ -1347,14 +1355,6 @@ const blogPosts = [
     content: "If your user testing and market research continually source from the same narrow demographic of early adopters or industry insiders, you are not optimizing a product. You are polishing an echo chamber.\n\nBehavioral science actively warns against homogeneous sampling because human decision-making heuristics shift wildly based on cultural context, economic pressure, and lived experience. A micro-interaction that feels 'seamless' to a tech worker in San Francisco might trigger deep suspicion in a logistics manager in Ohio.\n\nWhen we only study the people who already look and act like us, we design highly specialized solutions for a fractional market. The real leverage lies in finding the friction points of the outliers. \n\nThe companies that achieve absolute market dominance are the ones that study the edge cases. They architect systems that are robust enough to handle diverse psychological frameworks. Stop looking where the light is brightest; step into the blind spots and map the terrain before your competitors realize it exists.",
     image: "https://images.unsplash.com/photo-1558486012-817176f84c6d?q=80&w=1600&auto=format&fit=crop",
     date: "12.15.2025"
-  },
-  {
-    id: 6,
-    title: "The Illusion of Choice: Why Options Kill Authority",
-    concept: "Giving prospects a catalog of options doesn't empower them; it shifts the cognitive burden of decision-making onto their shoulders. True authority is demonstrated by prescribing a single, inevitable solution.",
-    content: "There is a pervasive myth in modern business that more choice equals better service. We build pricing tiers with endless toggles, we offer 'customized packages', and we present three different ways to solve a problem during a sales call.\n\nThis is a failure of leadership.\n\nWhen a patient goes to a top-tier surgeon, they don't want a menu of different scalpel techniques to choose from. They want the expert to diagnose the problem, prescribe the exact protocol required, and execute it unconditionally.\n\nProviding too many options is entirely a defensive maneuver. It allows the vendor to avoid taking a hard stance. But in high-level perception architecture, authority is built through absolute conviction. When you remove options, you remove friction. You train the prospect that you are the expert who dictates the terms of success.\n\nStop asking your market what they want to buy. Tell them what they need to do to dominate.",
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1600&auto=format&fit=crop",
-    date: "03.09.2026"
   }
 ];
 
